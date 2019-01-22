@@ -1,0 +1,26 @@
+#background img {
+    background-size: cover;
+    margin-left: 0;
+    padding-left: 0;
+    padding: 0%;
+
+}
+#background .sp {
+    display: none;
+}
+@media (max-width: 991px) {
+    #background .pc {
+      display: none;
+    }
+    #background .sp {
+        display: inline;
+    }
+}
+#background {
+    position: relative;
+}
+#background p {
+    color: white;/*文字は白に*/
+    top: 100px;
+    left: 0;
+    }
