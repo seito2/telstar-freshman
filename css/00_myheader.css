@@ -13,12 +13,10 @@
     box-sizing: border-box;
 }
 #myheader header .logo {
-    color: #fff;
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
+    height: 40px;
+    margin-top: 3px;
+    left: 10px;
     float: left;
-    font-weight: bold;
   }
   #myheader header nav {
     float: right;
@@ -59,10 +57,10 @@
       margin-top: 3px;
       float: right;
       text-decoration: none;
-      background: #668ad8;/*ボタン色*/
+      background: #d8666f;/*ボタン色*/
       color: #FFF;
       font-size: 16px;
-      border-bottom: solid 4px #627295;
+      border-bottom: solid 4px #956266;
       border-radius: 3px;
       display: none;
   }
@@ -77,9 +75,15 @@
   @media (max-width: 991px) {
     #myheader header {
       padding: 0 20px;
+      height: 180px;
     }
     #myheader .menu-toggle {
       display: block;
+    }
+    #myheader header .logo {
+      height: 90px;
+      margin-top: 40px;
+      float: left;
     }
     #myheader header nav {
       display: none;
@@ -96,5 +100,6 @@
     }
     #myheader .square_btn {
       display: inline;
+      margin-top: 65px;
     }
   }
