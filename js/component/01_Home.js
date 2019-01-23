@@ -6,6 +6,13 @@ Vue.component('background',{
     '</div>'
 })
 
+Vue.component('',{
+})
+
 new Vue({
     el: '#background'
+    ,
+    components:{
+        
+    }
 })
