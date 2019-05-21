@@ -52,5 +52,9 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+
+  router: {
+    base: '/telstar-freshman/'
   }
 }
