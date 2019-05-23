@@ -2,14 +2,14 @@
   <transition name="menu-list">
     <nav class="sp">
       <ul>
-        <li><a @click="changePage('/')">HOME</a></li>
+        <li><nuxt-link to="/"><a @click="toggleMenu">HOME</a></nuxt-link></li>
         <li><a href="#one" @click="toggleMenu">01:Our&nbsp;Vision</a></li>
         <li><a href="#two" @click="toggleMenu">02:Purpose</a></li>
         <li><a href="#three" @click="toggleMenu">03:Contents</a></li>
         <li><a href="#four" @click="toggleMenu">04:MEMBER</a></li>
         <li><a href="#five" @click="toggleMenu">05:Position</a></li>
         <li><a href="#seven" @click="toggleMenu">07:CONTACT</a></li>
-        <li><a @click="changePage('faq')">08:TELSTAR&nbsp;Q＆A</a></li>
+        <li><nuxt-link to="/faq"><a to="/faq">08:TELSTAR&nbsp;Q＆A</a></nuxt-link></li>
       </ul>
     </nav>
   </transition>
@@ -36,8 +36,7 @@ export default {
       }, 1200);
     },
     ...mapMutations({
-      changePage: 'changePage',
-      toggleMenu: 'toggleMenu',
+      toggleMenu: 'toggleMenu'
     })
   }
 }
@@ -49,9 +48,8 @@ export default {
     display: inline;
     position: absolute;
     background-color: rgb(255, 255, 255);
-    top: 70px;
+    top: 76px;
     left: 0;
-    transition: 0.5s;
   }
   nav.sp ul {
     padding: 0;
@@ -59,7 +57,7 @@ export default {
   }
   nav.sp ul li a {
     border-top: 1px solid #0000003d;
-    height: calc((100vh - 65px) / 8);
+    height: calc((100vh - 76px) / 8);
     width: 100vw;
     line-height: calc((100vh - 65px) / 8);
     font-size: 1em;

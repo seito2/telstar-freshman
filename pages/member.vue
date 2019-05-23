@@ -1,9 +1,15 @@
 <template>
-  <section class="container">
-    <MyHeader />
-    <MemberArticle />
-    <MyMenu v-if="$store.state.isShowMenu"/>
-  </section>
+  <div>
+    <div class="pc">
+      <p class="pc top">Not Service For PC And Tablets...</p>
+      <p class="pc bottom">Please Check By SmartPhone...</p>
+    </div>
+    <section class="container">
+      <MyHeader />
+      <MemberArticle />
+      <MyMenu v-if="$store.state.isShowMenu"/>
+    </section>
+  </div>
 </template>
 
 <script>

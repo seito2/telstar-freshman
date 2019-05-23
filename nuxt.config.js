@@ -55,6 +55,6 @@ export default {
   },
 
   router: {
-    base: '/telstar-freshman/'
+    base: '/telstar-freshman-2019-v2/'
   }
 }

@@ -1,6 +1,8 @@
 <template>
   <header>
-    <img class="logo" src="../img/index/telstar_logo_black.png" @click="changePage('/')">
+    <nuxt-link to="/">
+      <img class="logo" src="../img/index/telstar_logo_black.png" to="/">
+    </nuxt-link>
     <div />
     <img src="../img/index/ic_menu_48px.svg" @click="toggleMenu" class="hanbarger">
    </header>
@@ -16,8 +18,7 @@ export default {
       
     },
     ...mapMutations({
-      toggleMenu: 'toggleMenu',
-      changePage: 'changePage'
+      toggleMenu: 'toggleMenu'
     })
   }
 }

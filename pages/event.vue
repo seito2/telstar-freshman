@@ -1,23 +1,29 @@
 <template>
-  <section class="container">
-    <MyHeader />
-    <div>
-      <p class="title">EVENTS</p>
-      <div class="img-div">
-        <img v-for="(item, index) in img_src" :key="(item, index)" :src="imagePath(item)" @click="changeArticle(index)">
-      </div>
-      <transition name="fade-in-article">
-        <div v-if="isShow" class="pop-up-window">
-          <h2>{{ article.name }}</h2>
-          <p>{{ article.article }}</p>
-          <img src="../img/event/delete.png" @click="closeArticle" class="close">
-          <img :src="imagePath(img_path)" class="img">
-        </div>    
-      </transition>
-      <h4>画像をクリック！！</h4>
-    </div>  
-    <MyMenu v-if="$store.state.isShowMenu"/>
-  </section>
+  <div>
+    <div class="pc">
+      <p class="pc top">Not Service For PC And Tablets...</p>
+      <p class="pc bottom">Please Check By SmartPhone...</p>
+    </div>
+    <section class="container">
+      <MyHeader />
+      <div>
+        <p class="title">EVENTS</p>
+        <div class="img-div">
+          <img v-for="(item, index) in img_src" :key="(item, index)" :src="imagePath(item)" @click="changeArticle(index)">
+        </div>
+        <transition name="fade-in-article">
+          <div v-if="isShow" class="pop-up-window">
+            <h2>{{ article.name }}</h2>
+            <p>{{ article.article }}</p>
+            <img src="../img/event/delete.png" @click="closeArticle" class="close">
+            <img :src="imagePath(img_path)" class="img">
+          </div>    
+        </transition>
+        <h4>画像をクリック！！</h4>
+      </div>  
+      <MyMenu v-if="$store.state.isShowMenu"/>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -62,6 +68,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
 .container {
   margin: 0;
   min-height: 100vh;
@@ -94,7 +102,6 @@ export default {
   padding-top: 15px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
 
 p.title {
   width: 100%;

@@ -69,4 +69,32 @@ p {
   margin-inline-end: 0px;
   text-align: left;
 }
+p.pc {
+  display: none;
+}
+@media (min-width: 750px) {
+  * {
+    background-color: black;
+  }
+  .sp {
+    display: none;
+  }
+  p.pc {
+    display: block;
+    color: rgb(255, 255, 255);
+    position: relative; 
+    top: calc(50vh - 100px);
+    text-align: center;
+    width: 1000px;
+    height: 200px;
+    font-size: 30px;
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+  }
+  .container {
+    display: none;
+  }
+}
 </style>
