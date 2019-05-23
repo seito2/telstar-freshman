@@ -41,7 +41,12 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
+    '@nuxtjs/pwa'
   ],
+
+  workbox: {
+    dev: true,
+  },
 
   /*
   ** Build configuration
@@ -55,6 +60,6 @@ export default {
   },
 
   router: {
-    base: '/telstar-freshman-2019-v2/'
+    base: '/telstar-freshman-2019/'
   }
 }
