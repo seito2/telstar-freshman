@@ -67,6 +67,7 @@ export default {
     name: 'telstar-freshman-2019',
     short_name: 'telstar',
     title: 'telstar',
+    icon: false,
     'og:title': 'telstar',
     description: 'telstar',
     'og:description': 'telstar',
