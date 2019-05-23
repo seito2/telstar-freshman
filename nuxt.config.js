@@ -61,5 +61,18 @@ export default {
 
   router: {
     base: '/telstar-freshman-2019/'
-  }
+  },
+
+  manifest: {
+    name: 'telstar-freshman-2019',
+    short_name: 'telstar',
+    title: 'telstar',
+    'og:title': 'telstar',
+    description: 'telstar',
+    'og:description': 'telstar',
+    lang: 'ja',
+    theme_color: '#ffffff',
+    background_color: '#ffffff'
+  },
+    
 }
