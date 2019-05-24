@@ -9,7 +9,7 @@
         <li><a href="#four" @click="toggleMenu">04:MEMBER</a></li>
         <li><a href="#five" @click="toggleMenu">05:Position</a></li>
         <li><a href="#seven" @click="toggleMenu">07:CONTACT</a></li>
-        <li><nuxt-link to="/faq"><a to="/faq">08:TELSTAR&nbsp;Q＆A</a></nuxt-link></li>
+        <li><nuxt-link to="/faq"><a @click="toggleMenu">08:TELSTAR&nbsp;Q＆A</a></nuxt-link></li>
       </ul>
     </nav>
   </transition>

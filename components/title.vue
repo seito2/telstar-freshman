@@ -40,7 +40,7 @@ p.number::before {
   background: rgb(250, 239, 84);
   width: 4px;
   height: 100%;
-  left: 65px;
+  left: 70px;
 }
 p {
   text-align: left;
