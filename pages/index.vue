@@ -197,8 +197,14 @@ div.home-gif-container {
 
 img.topBackground {
   height: calc(100vh - 76px);  
-  width: 100vw;
+  /* width: 100vw; */
   filter: grayscale(90%);
+}
+@media screen and (max-width: 641px) {
+  img.topBackground {
+    width: 100vw;
+    height: auto;
+  }
 }
 img.telstar-logo-on-background {
   width: 250px;

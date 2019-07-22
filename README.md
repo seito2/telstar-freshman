@@ -2,6 +2,9 @@
 
 > My ultimate Nuxt.js project
 
+
+> This is a website for freshman
+---
 ## Build Setup
 
 ``` bash
